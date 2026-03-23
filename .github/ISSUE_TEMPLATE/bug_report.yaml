@@ -16,7 +16,7 @@ body:
       required: true
     attributes:
       label: |
-        ---
+        ---\n
         🗃️ Describe the problem
       description: |
         Describe the problem clearly here. Include descriptions of the 
