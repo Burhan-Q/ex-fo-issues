@@ -15,9 +15,7 @@ body:
     validations:
       required: true
     attributes:
-      label: |
-        ---\n
-        🗃️ Describe the problem
+      label: 🗃️ Describe the problem
       description: |
         Describe the problem clearly here. Include descriptions of the 
         expected behavior and the actual behavior.
@@ -29,7 +27,7 @@ body:
       required: true
     attributes:
       label: |
-        ---
+        <hr>
         🖥️ Operating System Platform & Distribution
       description: What Operating System (OS) was the bug found on? Select all that apply.
       options:
