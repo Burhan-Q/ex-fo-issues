@@ -26,9 +26,7 @@ body:
     validations:
       required: true
     attributes:
-      label: |
-        <hr>
-        🖥️ Operating System Platform & Distribution
+      label: 🖥️ Operating System Platform & Distribution
       description: What Operating System (OS) was the bug found on? Select all that apply.
       options:
         - label: Linux
@@ -36,14 +34,21 @@ body:
         - label: Windows
         - label: Other (please specify)
 
+  - type: markdown
+    attributes:
+        value: |
+        []()
+
+        ---
+
+        []()
+
   - type: textarea
     id: system-detail
     validations:
       required: true
     attributes:
-      label: |
-        ---
-        💻 System Details
+      label: 💻 System Details
       description: |
         Provide additional details about the system the bug occured on. Please include: 
           - Additional OS details
