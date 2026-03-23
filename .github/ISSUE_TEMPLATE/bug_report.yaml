@@ -84,10 +84,10 @@ body:
       required: true
     attributes:
       label:  |+
+        ⤵️ Installation type
 
         ---
 
-        ⤵️ Installation type
       description: What installation method for `fiftyone` was used?
       options:
         - label: Package (`pip`)
@@ -99,10 +99,10 @@ body:
       required: true
     attributes:
       label:  |+
+        ⌨️ Code to reproduce issue
 
         ---
 
-        ⌨️ Code to reproduce issue
       description: |
         Provide a reproducible test case that is the bare minimum necessary to generate 
         the problem. Please avoid sharing code that relies on your local data or 
@@ -117,10 +117,10 @@ body:
       required: true
     attributes:
       label: |+
+        🐍 What version of Python?
 
         ---
 
-        💻 System Details🐍 What version of Python?
       description: |
         Which version of Python was the bug found on? `python --version`
       placeholder: Python 3.11.14
@@ -139,10 +139,10 @@ body:
     id: additional-info
     attributes:
       label: |+
+        🪵 Other info/logs
 
         ---
 
-        💻 System Details🪵 Other info/logs
       description: |
         Include any logs or source code that would be helpful to diagnose the problem.
         If including tracebacks, please include the full traceback. Large logs and
@@ -156,10 +156,10 @@ body:
       required: true
     attributes:
       label: |+
+        🚀 Willingness to contribute
 
         ---
 
-        💻 System Details🚀 Willingness to contribute
       description: |
         The FiftyOne Community encourages bug fix contributions. Would you or another 
         member of your organization be willing to contribute a fix for this bug to the 
@@ -173,10 +173,10 @@ body:
     id: screenshots
     attributes:
       label: |+
+        📸 Upload screenshots
 
         ---
 
-        💻 System Details📸 Upload screenshots
       description: If applicable, add screenshots to help explain your problem.
     validations:
       required: false
