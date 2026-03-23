@@ -41,10 +41,10 @@ body:
       required: true
     attributes:
       label: |+
+        💻 System Details
 
         ---
 
-        💻 System Details
       description: |
         Provide additional details about the system the bug occured on. Please include: 
           - Additional OS details
