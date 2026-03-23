@@ -42,9 +42,9 @@ body:
     attributes:
       label: |+
 
-          ---
+        ---
 
-          💻 System Details
+        💻 System Details
       description: |
         Provide additional details about the system the bug occured on. Please include: 
           - Additional OS details
@@ -83,8 +83,10 @@ body:
     validations:
       required: true
     attributes:
-      label: |
+      label:  |+
+
         ---
+
         ⤵️ Installation type
       description: What installation method for `fiftyone` was used?
       options:
@@ -96,8 +98,10 @@ body:
     validations:
       required: true
     attributes:
-      label: |
+      label:  |+
+
         ---
+
         ⌨️ Code to reproduce issue
       description: |
         Provide a reproducible test case that is the bare minimum necessary to generate 
@@ -112,9 +116,11 @@ body:
     validations:
       required: true
     attributes:
-      label: |
+      label: |+
+
         ---
-        🐍 What version of Python?
+
+        💻 System Details🐍 What version of Python?
       description: |
         Which version of Python was the bug found on? `python --version`
       placeholder: Python 3.11.14
@@ -132,9 +138,11 @@ body:
   - type: textarea
     id: additional-info
     attributes:
-      label: |
+      label: |+
+
         ---
-        🪵 Other info/logs
+
+        💻 System Details🪵 Other info/logs
       description: |
         Include any logs or source code that would be helpful to diagnose the problem.
         If including tracebacks, please include the full traceback. Large logs and
@@ -147,9 +155,11 @@ body:
     validations:
       required: true
     attributes:
-      label: |
+      label: |+
+
         ---
-        🚀 Willingness to contribute
+
+        💻 System Details🚀 Willingness to contribute
       description: |
         The FiftyOne Community encourages bug fix contributions. Would you or another 
         member of your organization be willing to contribute a fix for this bug to the 
@@ -162,9 +172,11 @@ body:
   - type: upload
     id: screenshots
     attributes:
-      label: |
+      label: |+
+
         ---
-        📸 Upload screenshots
+
+        💻 System Details📸 Upload screenshots
       description: If applicable, add screenshots to help explain your problem.
     validations:
       required: false
