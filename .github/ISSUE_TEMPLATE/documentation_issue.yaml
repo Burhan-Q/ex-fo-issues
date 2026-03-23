@@ -24,7 +24,11 @@ body:
     validations:
       required: true
     attributes:
-      label: 📋 Description of proposal (what needs changing)
+      label: |+
+        📋 Description of proposal (what needs changing)
+
+        ---
+
       description: |
         Provide a clear description. Why is the proposed documentation better?
       placeholder: Describe the documentation issue and what should be changed
@@ -34,7 +38,11 @@ body:
     validations:
       required: true
     attributes:
-      label: 🚀 Willingness to contribute
+      label: |+
+        🚀 Willingness to contribute
+
+        ---
+
       description: |
         The FiftyOne Community encourages documentation contributions. Would you or another
         member of your organization be willing to contribute a fix for this documentation
