@@ -15,7 +15,9 @@ body:
     validations:
       required: true
     attributes:
-      label: 🗃️ Describe the problem
+      label: |
+        ---
+        🗃️ Describe the problem
       description: |
         Describe the problem clearly here. Include descriptions of the 
         expected behavior and the actual behavior.
@@ -26,7 +28,9 @@ body:
     validations:
       required: true
     attributes:
-      label: 🖥️ Operating System Platform & Distribution
+      label: |
+        ---
+        🖥️ Operating System Platform & Distribution
       description: What Operating System (OS) was the bug found on? Select all that apply.
       options:
         - label: Linux
@@ -39,7 +43,9 @@ body:
     validations:
       required: true
     attributes:
-      label: 💻 System Details
+      label: |
+        ---
+        💻 System Details
       description: |
         Provide additional details about the system the bug occured on. Please include: 
           - Additional OS details
@@ -78,7 +84,9 @@ body:
     validations:
       required: true
     attributes:
-      label: ⤵️ Installation type
+      label: |
+        ---
+        ⤵️ Installation type
       description: What installation method for `fiftyone` was used?
       options:
         - label: Package (`pip`)
@@ -89,7 +97,9 @@ body:
     validations:
       required: true
     attributes:
-      label: ⌨️ Code to reproduce issue
+      label: |
+        ---
+        ⌨️ Code to reproduce issue
       description: |
         Provide a reproducible test case that is the bare minimum necessary to generate 
         the problem. Please avoid sharing code that relies on your local data or 
@@ -103,7 +113,9 @@ body:
     validations:
       required: true
     attributes:
-      label: 🐍 What version of Python?
+      label: |
+        ---
+        🐍 What version of Python?
       description: |
         Which version of Python was the bug found on? `python --version`
       placeholder: Python 3.11.14
@@ -121,7 +133,9 @@ body:
   - type: textarea
     id: additional-info
     attributes:
-      label: 🪵 Other info/logs
+      label: |
+        ---
+        🪵 Other info/logs
       description: |
         Include any logs or source code that would be helpful to diagnose the problem.
         If including tracebacks, please include the full traceback. Large logs and
@@ -134,7 +148,9 @@ body:
     validations:
       required: true
     attributes:
-      label: 🚀 Willingness to contribute
+      label: |
+        ---
+        🚀 Willingness to contribute
       description: |
         The FiftyOne Community encourages bug fix contributions. Would you or another 
         member of your organization be willing to contribute a fix for this bug to the 
@@ -147,7 +163,9 @@ body:
   - type: upload
     id: screenshots
     attributes:
-      label: 📸 Upload screenshots
+      label: |
+        ---
+        📸 Upload screenshots
       description: If applicable, add screenshots to help explain your problem.
     validations:
       required: false
