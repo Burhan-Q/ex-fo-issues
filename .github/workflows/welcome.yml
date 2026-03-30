@@ -20,6 +20,18 @@ jobs:
         uses: actions/github-script@v8
         with:
           script: |
+            const { data: pr } = await github.rest.pulls.get({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: context.payload.pull_request.number,
+            });
+
+            const internal = ['MEMBER', 'OWNER', 'COLLABORATOR'];
+            if (internal.includes(pr.author_association)) {
+              console.log(`Skipping: ${pr.user.login} is ${pr.author_association}`);
+              return;
+            }
+
             await github.rest.issues.createComment({
               owner: context.repo.owner,
               repo: context.repo.repo,
