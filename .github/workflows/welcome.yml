@@ -37,7 +37,7 @@ jobs:
               repo: context.repo.repo,
               issue_number: context.payload.pull_request.number,
               body: [
-                `Thanks for opening this pull request, @${context.payload.pull_request.user.login}! 🎉`,
+                `Thanks for opening this pull request, @${pr.user.login}! 🎉`,
                 '',
                 'A maintainer will review your changes soon. In the meantime, please ensure:',
                 '',
